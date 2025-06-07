@@ -13,6 +13,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* RTL specific styles */
+html[dir="rtl"] {
+  text-align: right;
+}
+
+html[dir="rtl"] button {
+  text-align: right;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -25,7 +34,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
