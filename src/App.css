@@ -13,91 +13,84 @@
   background-color: rgba(100, 108, 255, 0.05);
 }
 
-/* Image Gallery Styles */
-.room-images {
+/* Room Gallery Styles */
+.room-gallery {
   margin: -1.5rem -1.5rem 1.5rem -1.5rem;
-  border-radius: 8px 8px 0 0;
-  overflow: hidden;
-  background-color: #000;
+  background-color: transparent;
+  height: 400px;
 }
 
-.image-gallery {
+.room-slide {
+  height: 400px;
   position: relative;
-  height: 15rem;
 }
 
-.image-container {
-  width: 15rem;
-  height: 15rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.image-container img {
+.room-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 8px;
 }
 
-.gallery-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
-  font-size: 24px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.2s;
-  z-index: 2;
+/* Slick Carousel Customization */
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  width: 30px !important;
+  height: 30px !important;
+  background: transparent !important;
+  border-radius: 50% !important;
+  /* transition: transform 0.2s ease !important; */
 }
 
-.gallery-nav:hover {
-  background: rgba(0, 0, 0, 0.8);
+.slick-prev:hover,
+.slick-next:hover {
+  background: transparent !important;
+  /* transform: scale(1.1) !important; */
 }
 
-.gallery-nav.prev {
-  right: 10px;
+.slick-prev {
+  right: 20px !important;
+  left: auto !important;
 }
 
-.gallery-nav.next {
-  left: 10px;
+.slick-next {
+  left: 20px !important;
+  right: auto !important;
 }
 
-.image-dots {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
-  z-index: 2;
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px !important;
+  opacity: 0.8 !important;
+  color: white !important;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5) !important;
 }
 
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: none;
-  background: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  padding: 0;
-  transition: background-color 0.2s;
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  opacity: 1 !important;
 }
 
-.dot.active {
-  background: white;
+.slick-dots {
+  bottom: 10px !important;
 }
 
-.dot:hover {
-  background: rgba(255, 255, 255, 0.8);
+.slick-dots li button:before {
+  display: none !important;
+}
+
+.slick-dots li.slick-active div {
+  background-color: white !important;
+}
+
+/* Remove old gallery styles */
+.gallery-nav,
+.image-dots,
+.dot,
+.room-container,
+.room-dots {
+  display: none;
 }
 
 /* Rest of the existing styles */
@@ -157,10 +150,10 @@
 
 button {
   margin: 0.5rem;
-  transition: all 0.2s ease;
+  /* transition: all 0.2s ease; */
 }
 
 button:hover {
-  transform: translateY(-2px);
+  /* transform: translateY(-2px); */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
