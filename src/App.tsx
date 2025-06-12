@@ -1,17 +1,21 @@
 import { useState, useCallback } from "react";
-import RoomInfo from "./Components/RoomInfo";
-import { rooms, type Room } from "./data";
+import Room from "./Components/Room/Room";
+import { rooms } from "./data";
+import type { Room as RoomType } from "./types";
+import Header from "./Components/Header";
 
 function App() {
-  const [selectedRoom, setSelectedRoom] = useState<Room | null>(rooms[0]);
+  const [selectedRoom, setSelectedRoom] = useState<RoomType | null>(rooms[0]);
 
-  const handleRoomSelect = useCallback((room: Room) => {
+  const handleRoomSelect = useCallback((room: RoomType) => {
     setSelectedRoom(room);
   }, []);
 
   return (
-    <div>
-      <div>
+    <div className="layout">
+      <h1 className="title">החדרים שלנו</h1>
+      <Header />
+      <div className="rooms-header">
         {rooms.map((room) => (
           <button
             key={room.id}
@@ -26,7 +30,7 @@ function App() {
           </button>
         ))}
       </div>
-      {selectedRoom && <RoomInfo selectedRoom={selectedRoom} />}
+      {selectedRoom && <Room selectedRoom={selectedRoom} />}
     </div>
   );
 }

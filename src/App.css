@@ -13,13 +13,6 @@
   background-color: rgba(100, 108, 255, 0.05);
 }
 
-/* Room Gallery Styles */
-.room-gallery {
-  margin: -1.5rem -1.5rem 1.5rem -1.5rem;
-  background-color: transparent;
-  height: 400px;
-}
-
 .room-slide {
   height: 400px;
   position: relative;
@@ -106,7 +99,7 @@
 }
 
 .facilities {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .facilities-grid {
@@ -156,4 +149,52 @@ button {
 button:hover {
   /* transform: translateY(-2px); */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  margin: 0;
+}
+
+.room-title {
+  margin: 0;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.rooms-titles {
+  display: flex;
+}
+
+.room-container {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.room-gallery-section {
+  flex: 1;
+  min-width: 0; /* Prevents flex item from overflowing */
+}
+
+.room-info-section {
+  flex: 1;
+  min-width: 0; /* Prevents flex item from overflowing */
+  /* padding: 1rem; */
+}
+
+/* Ensure the gallery images fit properly */
+.room-gallery {
+  width: 100%;
+}
+
+.room-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
