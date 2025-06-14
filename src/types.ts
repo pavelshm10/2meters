@@ -1,7 +1,7 @@
 export type Room = {
   id: number;
   title: string;
-  description: string[];
+  description: string;
   comment?: string;
   images: string[];
   facilities?: { value: string; icon: string }[];

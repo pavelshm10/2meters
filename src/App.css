@@ -2,12 +2,19 @@
 
 html,
 body {
-  font-family: "Rubik", sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
   overflow-x: hidden;
   direction: rtl;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
 }
 
 /* Reset default margins and padding */
@@ -168,6 +175,12 @@ body {
 
 button {
   margin: 0.5rem;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.25s;
 }
 
 button:hover {
@@ -325,4 +338,10 @@ button:hover {
 
 .slick-slide > div {
   height: 100%;
+}
+
+.description p {
+  white-space: pre-line;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }

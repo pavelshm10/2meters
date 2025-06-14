@@ -12,9 +12,11 @@ function RoomInfo({ room }: RoomInfoProps) {
     <>
       <h2 className="room-title">{room.title}</h2>
       <div className="description">
-        {room.description.map((sentence, index) => (
-          <p key={index}>{sentence}.</p>
-        ))}
+        <p
+          dangerouslySetInnerHTML={{
+            __html: room.description.replace(/\n/g, "<br />"),
+          }}
+        />
       </div>
       {room.comment && <p className="comment">{room.comment}</p>}
 
