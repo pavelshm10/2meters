@@ -11,18 +11,17 @@ function RoomFacility({ facilities, roomId }: RoomFacilityProps) {
     <div className="facilities">
       <h3>מתקנים:</h3>
       <div className="facilities-grid">
-        {facilities &&
-          facilities.map((facility, index: number) => (
-            <div key={`${roomId}-facility-${index}`} className="facility-item">
-              <img
-                src={facility.icon}
-                alt={facility.value}
-                className="facility-icon"
-                loading="lazy"
-              />
-              <span>{facility.value}</span>
-            </div>
-          ))}
+        {facilities&&facilities.map((facility, index: number) => (
+          <div key={`${roomId}-facility-${index}`} className="facility-item">
+            <img
+              src={facility.icon}
+              alt={facility.value}
+              className="facility-icon"
+              loading="lazy"
+            />
+            <span>{facility.value}</span>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -24,11 +24,20 @@ function RoomInfo({ room }: RoomInfoProps) {
 
       {room.rooms && (
         <div className="rooms">
-          <h3>חדרים:</h3>
+          <hr />
           {room.rooms.map(
             (roomItem: { name: string; value: string }, index: number) => (
               <div key={`${room.id}-room-${index}`} className="room-item">
-                <strong>{roomItem.name}:</strong> {roomItem.value}
+                <span>חדר&nbsp;{roomItem.name}:</span>
+                <div className="facility-item">
+                  <img
+                    src="src/assets/icons/single_beds.svg"
+                    alt="single_beds"
+                    className="facility-icon"
+                    loading="lazy"
+                  />
+                </div>
+                {roomItem.value}
               </div>
             )
           )}

@@ -2,7 +2,14 @@ import React from "react";
 
 function Header() {
   return (
-    <div style={{ padding: "1rem", textAlign: "right", direction: "rtl" }}>
+    <div
+      style={{
+        paddingRight: "2.5rem",
+        paddingTop: "1rem",
+        textAlign: "right",
+        direction: "rtl",
+      }}
+    >
       <ul style={{ padding: 0, margin: 0 }}>
         <li>בתאריך ה-19.9 נתארח במצוקי דרגות - ים המלח</li>
         <li>
@@ -18,7 +25,9 @@ function Header() {
           כפיקדון. במקרה של נזק בחדר ישפה המזמין את מצוקי דרגות בעלות התיקון
           והנזק.
         </li>
-        <li>לביצוע הזמנה ופרטים נוספים יש לפנות למספר בווטסאפ: 54-809-77450</li>
+        <li>
+          לביצוע הזמנה ופרטים נוספים יש לפנות למספר בווטסאפ: 054-809-77450
+        </li>
       </ul>
     </div>
   );

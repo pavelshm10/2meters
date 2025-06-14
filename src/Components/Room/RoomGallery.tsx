@@ -36,7 +36,7 @@ function RoomGallery({ images, title }: RoomGalleryProps) {
   };
 
   return (
-    <Slider {...settings}>
+    <Slider className="room-gallery" {...settings}>
       {images.map((image, index) => (
         <div key={index} className="room-slide">
           <img
