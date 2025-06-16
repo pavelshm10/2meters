@@ -7,9 +7,14 @@ import "./App.css";
 
 function App() {
   const [selectedRoom, setSelectedRoom] = useState<RoomType | null>(rooms[0]);
+  const [isMapFullscreen, setIsMapFullscreen] = useState(false);
 
   const handleRoomSelect = useCallback((room: RoomType) => {
     setSelectedRoom(room);
+  }, []);
+
+  const toggleMapFullscreen = useCallback(() => {
+    setIsMapFullscreen((prev) => !prev);
   }, []);
 
   return (
@@ -18,12 +23,22 @@ function App() {
         <h1 className="title">החדרים שלנו</h1>
       </div>
       <Header />
-      <div className="map-container">
+      <div className={`map-container ${isMapFullscreen ? "fullscreen" : ""}`}>
         <img
           src="src/assets/images/map.jpg"
           alt="room-header"
           className="map-image"
+          onClick={toggleMapFullscreen}
         />
+        {isMapFullscreen && (
+          <button
+            className="close-fullscreen"
+            onClick={toggleMapFullscreen}
+            aria-label="Close fullscreen"
+          >
+            ✕
+          </button>
+        )}
       </div>
       <div className="rooms-header">
         {rooms.map((room) => (

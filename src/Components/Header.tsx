@@ -9,6 +9,7 @@ function Header() {
         textAlign: "right",
         direction: "rtl",
       }}
+      className="header-container"
     >
       <ul style={{ padding: 0, margin: 0 }}>
         <li>בתאריך ה-19.9 נתארח במצוקי דרגות - ים המלח</li>
