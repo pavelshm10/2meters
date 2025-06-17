@@ -20,7 +20,17 @@ function App() {
   return (
     <div className="app-container">
       <div className="title-container">
+        <img
+          src="src/assets/2_meters_logo2.svg"
+          alt="2 meters logo"
+          className="title-logo2"
+        />
         <h1 className="title">החדרים שלנו</h1>
+        <img
+          src="src/assets/2_meters_logo.svg"
+          alt="2 meters logo"
+          className="title-logo"
+        />
       </div>
       <Header />
       <div className={`map-container ${isMapFullscreen ? "fullscreen" : ""}`}>
