@@ -6,6 +6,7 @@ interface RoomFacilityProps {
 }
 
 function RoomFacility({ facilities, roomId }: RoomFacilityProps) {
+  console.log("RoomFacility", facilities, roomId);
   return (
     <div className="facilities">
       <h3>מתקנים:</h3>
