@@ -24,6 +24,7 @@ function App() {
       <div className="title-container">
         <div className="title-logo-container">
           <img
+            loading="lazy"
             src="/assets/2_meters_logo.svg"
             alt="2 meters logo"
             className="title-logo2"
@@ -32,6 +33,7 @@ function App() {
         <h1 className="title">החדרים שלנו</h1>
         <div className="title-logo-container">
           <img
+            loading="lazy"
             src="/assets/2_meters_logo2.svg"
             alt="2 meters logo"
             className="title-logo"
@@ -41,6 +43,7 @@ function App() {
       <Header />
       <div className={`map-container ${isMapFullscreen ? "fullscreen" : ""}`}>
         <img
+          loading="lazy"
           src="/assets/images/map.jpg"
           alt="room-header"
           className="map-image"

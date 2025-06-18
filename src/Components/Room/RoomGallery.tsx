@@ -42,6 +42,8 @@ function RoomGallery({ images, title }: RoomGalleryProps) {
             src={image}
             alt={`${title} - תמונה ${index + 1}`}
             loading="lazy"
+            width="600"
+            height="400"
           />
         </div>
       ))}
