@@ -215,7 +215,7 @@ button:hover {
   justify-content: center;
   gap: 3rem;
   width: 100%;
-  background-image: url("src/assets/images/bg-mezuke.jpg");
+  background-image: url("/assets/images/bg-mezuke.jpg");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -223,15 +223,21 @@ button:hover {
 }
 
 .title-logo {
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
-}
-
-.title-logo2 {
   width: 120px;
   height: 120px;
   object-fit: contain;
+}
+
+.title-logo-container{
+  width:220px;
+  display: flex;
+}
+
+.title-logo2 {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  margin: auto
 }
 
 .rooms-titles {
