@@ -41,7 +41,7 @@ function App() {
       <Header />
       <div className={`map-container ${isMapFullscreen ? "fullscreen" : ""}`}>
         <img
-          src="src/assets/images/map.jpg"
+          src="/assets/images/map.jpg"
           alt="room-header"
           className="map-image"
           onClick={toggleMapFullscreen}
