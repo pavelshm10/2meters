@@ -1,4 +1,3 @@
-import React from "react";
 import { type Room as RoomType } from "../../types";
 import "./../../App.css";
 import RoomGallery from "./RoomGallery";
