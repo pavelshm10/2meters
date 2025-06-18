@@ -4,6 +4,8 @@ import { rooms } from "./data";
 import type { Room as RoomType } from "./types";
 import Header from "./Components/Header";
 import "./App.css";
+import logo2 from './assets/2_meters_logo2.svg';
+import logo1 from './assets/2_meters_logo.svg';
 
 function App() {
   const [selectedRoom, setSelectedRoom] = useState<RoomType | null>(rooms[0]);
@@ -21,13 +23,13 @@ function App() {
     <div className="app-container">
       <div className="title-container">
         <img
-          src="src/assets/2_meters_logo2.svg"
+          src={logo2}
           alt="2 meters logo"
           className="title-logo2"
         />
         <h1 className="title">החדרים שלנו</h1>
         <img
-          src="src/assets/2_meters_logo.svg"
+          src={logo1}
           alt="2 meters logo"
           className="title-logo"
         />
