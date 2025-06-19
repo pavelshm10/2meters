@@ -4,8 +4,6 @@ import { rooms } from "./data";
 import type { Room as RoomType } from "./types";
 import Header from "./Components/Header";
 import "./App.css";
-// import logo2 from '../public/assets/images/2_meters_logo.svg';
-// import logo1 from '../public/assets/images/2_meters_logo.svg';
 
 function App() {
   const [selectedRoom, setSelectedRoom] = useState<RoomType | null>(rooms[0]);
