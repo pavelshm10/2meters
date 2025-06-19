@@ -1,10 +1,9 @@
-
 function Header() {
   return (
     <div
       style={{
+        padding: "1rem",
         paddingRight: "2.5rem",
-        paddingTop: "1rem",
         textAlign: "right",
         direction: "rtl",
       }}
