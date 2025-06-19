@@ -225,6 +225,7 @@ button:hover {
   width: 120px;
   height: 120px;
   object-fit: contain;
+  margin: auto;
 }
 
 .title-logo-container {
@@ -432,6 +433,11 @@ button {
 }
 
 @media screen and (max-width: 920px) {
+  .room-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .title-container {
     height: 200px;
     gap: 1.5rem;
@@ -447,11 +453,11 @@ button {
     width: 60px;
     height: 60px;
     object-fit: contain;
+    margin: auto;
   }
 
   .title-logo-container {
     width: 220px;
-    /* border:1px solid red; */
     display: flex;
   }
 
@@ -459,6 +465,7 @@ button {
     width: 250px;
     height: 250px;
     object-fit: contain;
+    margin: auto;
   }
 
   .rooms-header {

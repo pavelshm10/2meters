@@ -32,7 +32,7 @@ function RoomInfo({ room }: RoomInfoProps) {
                 <span>חדר&nbsp;{roomItem.name}:</span>
                 <div className="facility-item">
                   <img
-                    src="src/assets/icons/single_beds.svg"
+                    src="/assets/icons/single_beds.svg"
                     alt="single_beds"
                     className="facility-icon"
                     loading="lazy"
