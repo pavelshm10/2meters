@@ -445,8 +445,8 @@ button {
   }
 
   .title {
-    font-size: 1.1rem;
-    width: 260px;
+    font-size: 1.5rem;
+    /* width: 260px; */
   }
 
   .title-logo {
